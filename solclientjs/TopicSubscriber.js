@@ -99,10 +99,10 @@ var TopicSubscriber = function (topicName) {
         var sessionProperties = new solace.SessionProperties();
         sessionProperties.url = 'ws://' + host;
         // NOTICE: the Solace router VPN name
-        sessionProperties.vpnName = 'default';
+        sessionProperties.vpnName = 'hackathon';
         subscriber.log('Solace router VPN name: ' + sessionProperties.vpnName);
         // NOTICE: the client username
-        sessionProperties.userName = 'tutorial';
+        sessionProperties.userName = 'hackathon';
         subscriber.log('Client username: ' + sessionProperties.userName);
         subscriber.session = solace.SolclientFactory.createSession(
             sessionProperties,
